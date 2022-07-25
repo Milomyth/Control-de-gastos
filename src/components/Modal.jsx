@@ -48,6 +48,7 @@ function Modal({setModal, setAnimarModal, animarModal}) {
           <div className='campo'>
             <label htmlFor="nombre">Categoria</label>
             <select id='categoria'
+              value={categoria}
               onChange={ e => setCategoria(e.target.value)}
             >
               <option value=''>-- Seleccione una Categoria --</option>
